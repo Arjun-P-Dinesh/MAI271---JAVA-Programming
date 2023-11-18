@@ -1,2 +1,2 @@
-# MAI271---JAVA-Programming-LAb
-MAI271-JAVA Programming Lab files is uploaded here
+# MAI271---JAVA-Programming
+MAI271-JAVA Programming files is uploaded here
