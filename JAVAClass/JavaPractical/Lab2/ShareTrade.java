@@ -3,13 +3,19 @@ import java.util.Scanner;
 public class ShareTrade {
 
 	public static void main(String[] args)   {  
-		int n;  
-		Scanner sc=new Scanner(System.in);
-		int[] array = new int[10]; 
-		System.out.println("Price ");  
-		for(int i=0; i<n; i++)  {  
-			array[i]=sc.nextInt();  //reading stock prices
-		}
+		Scanner scanner = new Scanner(System.in);
+
+        System.out.println("Enter the stock prices: ");
+        String[] input = scanner.nextLine().split(" ");
+
+        int n = input.length;
+        int price[] = new int[n];
+
+        for (int i = 0; i < n; i++) {
+            price[i] = Integer.parseInt(input[i]);
+        }
+        System.out.println(maxProfit(price, n));
+	}
 
 
 
