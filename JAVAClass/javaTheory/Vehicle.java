@@ -14,8 +14,8 @@ class Car extends Vehicle {
     int speed;
 
     public Car(String model, int speed) {
-        model = model; 
         super(model);
+        model = model; 
         this.speed = speed;
     }
 
@@ -30,7 +30,7 @@ class Car extends Vehicle {
 
 public class Main {
     public static void main(String[] args) {
-        Vehicle vehicle = new Vehicle(20);
+        Vehicle vehicle = new Vehicle("Sedan");
         vehicle.startEngine();
 
         Car car = new Car("Sedan", 60);
