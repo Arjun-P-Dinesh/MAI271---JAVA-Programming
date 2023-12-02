@@ -1,31 +1,23 @@
-import java.util.Scanner;
+public class ShareTrade{
+    static int maxProfit;
+    public static int findMaxProfit(int[] stockprices) {
+        int n = stockprices.length;
+        int profit = 0;
+        int buyprice = stockprices[0];
+        for(int i=1;i<n;i++) {
+            if(stockprices[i] < stockprices[i-1]) {
+                profit += stockprices[i-1] - buyprice;
+                buyprice = stockprices[i];
+            }
 
-public class ShareTrade {
-
-	public static void main(String[] args)   {  
-		Scanner scanner = new Scanner(System.in);
-
-        System.out.println("Enter the stock prices >>> ");
-        String[] input = scanner.nextLine().split(",");
-
-        int n = input.length;
-        int price[] = new int[n];
-
-        for (int i = 0; i < n; i++) {
-            price[i] = Integer.parseInt(input[i]);
         }
-        System.out.println(maxProfit(price, n));
-	}
-    static int maxProfit(int price[], int n) {
-        int maxProfit = 0;
-        int profitAfterBuy = Integer.MIN_VALUE;
-
-        for (int i = 0; i < n; i++) {
-            maxProfit = Math.max(maxProfit, price[i] + profitAfterBuy);
-            profitAfterBuy = Math.max(profitAfterBuy, -price[i]);
-        }
-
-        return maxProfit;
+        profit += stockprices[n-1] -buyprice;
+        return profit;
     }
-
+    public static void main(String[] args) {
+        int[] prices1 = {10, 22, 5, 75, 65, 80};
+        int[] prices2 = {2, 30, 15, 10, 8, 25, 80};
+        System.out.println("Prices 1: " + findMaxProfit(prices1));
+        System.out.println("Prices 2: " + findMaxProfit(prices2));
+    }
 }
