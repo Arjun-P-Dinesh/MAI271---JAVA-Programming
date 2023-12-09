@@ -2,8 +2,8 @@ import java.util.Scanner;
 
 // Abstract class 'Bank'
 abstract class Bank {
-    double getBalance(){}
-    double getInterestRate();
+    abstract double getBalance();
+    abstract double getInterestRate();
 }
 
 // Subclass BankA
@@ -63,22 +63,22 @@ class BankC extends Bank {
     }
 }
 
-public class Main {
+class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
         // Creating objects for each bank with user input for initial balance
         System.out.print("Enter initial balance for Bank A: ");
         double initialBalanceA = scanner.nextDouble();
-        BankA bankA = new BankA();
+        BankA bankA = new BankA(20);
 
         System.out.print("Enter initial balance for Bank B: ");
         double initialBalanceB = scanner.nextDouble();
-        BankB bankB = new Bank;
-        
+        BankB bankB = new BankB(35);
+
         System.out.print("Enter initial balance for Bank C: ");
         double initialBalanceC = scanner.nextDouble();
-        BankC bankC = new BankC;
+        BankC bankC = new BankC(75);
 
         // Displaying balance and interest rate for each bank
         System.out.println("\nBank A:");
