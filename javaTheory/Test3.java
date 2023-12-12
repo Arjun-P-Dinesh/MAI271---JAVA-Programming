@@ -6,4 +6,6 @@ class Test3{
 	public static void main(String args[]){
 //caliing construtor
 	Test3 b=new Test3();
-}}
+}
+    public void show() {
+    }}
