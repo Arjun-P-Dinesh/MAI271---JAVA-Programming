@@ -16,8 +16,6 @@ public Customer(String customerId, String name) {
 
     
 }
-
-
 class Product {
     private String productId;
     private String name;
@@ -33,8 +31,6 @@ class Product {
 
     
 }
-
-
 class Order {
     private String orderId;
     private Customer customer;
