@@ -1,15 +1,60 @@
-package JavaPractical.Lab6;
-
 import java.util.*;
-import java.util.concurrent.atomic.AtomicInteger;
+
 
 public class CoinCombination {
-    private final int[] coins;
-    private final int sum;
-    private final AtomicInteger combinationCount = new AtomicInteger(0);
 
-    public CoinCombination(int[] coins, int sum) {
-        this.coins = coins;
-        this.sum = sum;
+    public static void main(String[] args) throws InterruptedException {
+        Scanner input = new Scanner(System.in);
+        System.out.print("Enter the number of coins: ");
+        int n = input.nextInt();
+        int[] coinsArr = new int[n];
+
+        System.out.println("Enter the sum value you want to obtain : ");
+        int sum = input.nextInt();
+        Thread t1 = new Thread(() -> {
+
+            synchronized (coinsArr) {
+
+                System.out.print("Enter the coins denomination: ");
+                for (int i = 0; i < n; i++) {
+                    coinsArr[i] = input.nextInt();
+                }
+
+            }
+        });
+        List<List<Integer>> v = new ArrayList<>();
+        Thread t2 = new Thread(() -> {
+            synchronized (coinsArr) {
+                combiFunction(coinsArr, sum, 0, new ArrayList<>(), v);
+            }
+        });
+
+        t1.start();
+        t2.start();
+        t1.join();
+        t2.join();
+        for (List<Integer> combination : v) {
+            System.out.println(combination);
+        }
+
+    }
+
+    static void combiFunction(int[] array, int target, int start, List<Integer> current,
+                              List<List<Integer>> result) {
+        if (target == 0) {
+
+            result.add(new ArrayList<>(current));
+            return;
+        }
+
+        for (int i = start; i < array.length; i++) {
+
+            if (array[i] <= target) {
+                current.add(array[i]);
+                combiFunction(array, target - array[i], i, current, result);
+                current.remove(current.size() - 1);
+            }
+        }
+    }
+
 }
-
