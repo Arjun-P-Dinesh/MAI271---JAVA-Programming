@@ -1,7 +1,5 @@
 # MAI271---JAVA-Programming
 
-<a href="https://languages.abranhe.com/logos.css" rel="stylesheet">
-
 **This repository contains Java projects completed during Semester 2 of my studies.**
 
 **## About Java**
