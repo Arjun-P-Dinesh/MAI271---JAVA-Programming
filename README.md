@@ -22,8 +22,10 @@
     - Maven for Java
 
 **## Projects Included**
-
-(List the projects with brief descriptions here)
+* **JavaPractical**
+* **javaTheory**
+* **JavaProject**
+* **javaLabTest1**
 
 **## Important Java Concepts**
 
