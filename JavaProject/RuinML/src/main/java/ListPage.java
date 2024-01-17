@@ -48,11 +48,12 @@ public class ListPage extends javax.swing.JFrame {
         jPanel3.setPreferredSize(new java.awt.Dimension(1024, 117));
 
         jLabel4.setFont(new java.awt.Font("Laksaman", 1, 48)); // NOI18N
-        jLabel4.setForeground(new java.awt.Color(255, 255, 51));
+        jLabel4.setForeground(new java.awt.Color(255, 255, 255));
         jLabel4.setText("RuinML");
 
+        jLabel5.setBackground(new java.awt.Color(255, 255, 255));
         jLabel5.setFont(new java.awt.Font("Gayathri Thin", 1, 24)); // NOI18N
-        jLabel5.setForeground(new java.awt.Color(153, 153, 0));
+        jLabel5.setForeground(new java.awt.Color(255, 255, 255));
         jLabel5.setText("A Tool For Finding Adveseries In Machine Learning Models");
 
         javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);

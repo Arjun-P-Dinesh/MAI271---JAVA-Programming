@@ -33,16 +33,16 @@ public class RuinML extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jPanel1.setBackground(new java.awt.Color(153, 153, 153));
+        jPanel1.setBackground(new java.awt.Color(153, 153, 255));
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Pink And Purple Minimalist Motivational Quote Desktop Wallpaper_11zon.png"))); // NOI18N
 
         jLabel2.setFont(new java.awt.Font("Laksaman", 1, 48)); // NOI18N
-        jLabel2.setForeground(new java.awt.Color(255, 255, 51));
+        jLabel2.setForeground(new java.awt.Color(255, 255, 255));
         jLabel2.setText("RuinML");
 
         jLabel3.setFont(new java.awt.Font("Gayathri Thin", 1, 24)); // NOI18N
-        jLabel3.setForeground(new java.awt.Color(153, 153, 0));
+        jLabel3.setForeground(new java.awt.Color(255, 255, 255));
         jLabel3.setText("A Tool For Finding Adveseries In Machine Learning Models");
 
         jLabel4.setFont(new java.awt.Font("Laksaman", 1, 48)); // NOI18N
