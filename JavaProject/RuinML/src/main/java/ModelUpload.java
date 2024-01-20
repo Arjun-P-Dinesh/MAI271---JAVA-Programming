@@ -63,7 +63,6 @@ public class ModelUpload extends javax.swing.JFrame {
         );
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setPreferredSize(new java.awt.Dimension(1024, 768));
         setResizable(false);
 
         jPanel2.setPreferredSize(new java.awt.Dimension(1024, 768));
@@ -72,11 +71,11 @@ public class ModelUpload extends javax.swing.JFrame {
         jPanel3.setPreferredSize(new java.awt.Dimension(1024, 117));
 
         jLabel3.setFont(new java.awt.Font("Laksaman", 1, 48)); // NOI18N
-        jLabel3.setForeground(new java.awt.Color(255, 255, 51));
+        jLabel3.setForeground(new java.awt.Color(255, 255, 255));
         jLabel3.setText("RuinML");
 
         jLabel4.setFont(new java.awt.Font("Gayathri Thin", 1, 24)); // NOI18N
-        jLabel4.setForeground(new java.awt.Color(153, 153, 0));
+        jLabel4.setForeground(new java.awt.Color(255, 255, 255));
         jLabel4.setText("A Tool For Finding Adveseries In Machine Learning Models");
 
         javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
@@ -225,18 +224,12 @@ public class ModelUpload extends javax.swing.JFrame {
                         .addGap(0, 0, Short.MAX_VALUE)
                         .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 168, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(jPanel5Layout.createSequentialGroup()
+                        .addGap(121, 121, 121)
                         .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(jPanel5Layout.createSequentialGroup()
-                                .addGap(121, 121, 121)
-                                .addComponent(jRadioButton1))
-                            .addGroup(jPanel5Layout.createSequentialGroup()
-                                .addGap(121, 121, 121)
-                                .addComponent(jRadioButton5))
-                            .addGroup(jPanel5Layout.createSequentialGroup()
-                                .addGap(121, 121, 121)
-                                .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(jRadioButton4)
-                                    .addComponent(jRadioButton2))))
+                            .addComponent(jRadioButton1)
+                            .addComponent(jRadioButton5)
+                            .addComponent(jRadioButton4)
+                            .addComponent(jRadioButton2))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jFileChooser1, javax.swing.GroupLayout.PREFERRED_SIZE, 441, javax.swing.GroupLayout.PREFERRED_SIZE)

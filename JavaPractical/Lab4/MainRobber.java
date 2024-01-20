@@ -1,5 +1,3 @@
-package JavaPractical.Lab4;
-
 import java.util.Scanner;
 abstract class Robber{
 void RobbingClass(){System.out.println("MScAi&ML");}
