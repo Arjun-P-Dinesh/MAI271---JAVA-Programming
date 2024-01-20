@@ -1,4 +1,3 @@
-package JavaPractical.Lab5;
 // Define the BankInterface
 interface BankInterface {
     double getBalance();
