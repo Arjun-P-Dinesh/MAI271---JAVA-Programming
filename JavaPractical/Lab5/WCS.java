@@ -1,5 +1,3 @@
-package JavaPractical.Lab5;
-
 import java.util.Scanner;
 interface WaterConservationSystem {
     int calculateTrappedWater(int[] blockHeights);
@@ -44,7 +42,7 @@ class CityBlockCons extends RainySeasonConservation {
 
 
 
-public class WaterConservation{
+public class WCS{
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         
