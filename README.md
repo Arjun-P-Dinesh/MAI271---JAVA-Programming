@@ -16,12 +16,11 @@
 
 * **VS Code:** A popular, open-source code editor with Java support.
 * **Java Development Kit (JDK):** Required to compile and run Java code.
-* **Extensions:** Consider using VS Code extensions for Java development, such as:
-    - Language Support for Java(TM) by Red Hat
-    - Debugger for Java
-    - Maven for Java
+* **Apache NetBeans:** An integrated development environment (IDE) for Java development, offering a wide range of features.
+* **Swing UI Toolkit:** Used for building the graphical user interface in Java applications.
 
-**## Projects Included**
+
+**## Files Included**
 * **JavaPractical**
 * **javaTheory**
 * **JavaProject** - <a href = "https://github.com/Arjun-P-Dinesh/MAI271---JAVA-Programming/tree/main/JavaProject"> RuinML </a>
