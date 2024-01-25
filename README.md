@@ -24,7 +24,7 @@
 **## Projects Included**
 * **JavaPractical**
 * **javaTheory**
-*  <a href = "https://github.com/Arjun-P-Dinesh/MAI271---JAVA-Programming/tree/main/JavaProject"> **JavaProject** </a>
+* **JavaProject** - <a href = "https://github.com/Arjun-P-Dinesh/MAI271---JAVA-Programming/tree/main/JavaProject"> RuinML </a>
 * **javaLabTest1**
 
 **## Important Java Concepts**
