@@ -24,7 +24,7 @@
 **## Projects Included**
 * **JavaPractical**
 * **javaTheory**
-* **JavaProject**
+*  <a href = "https://github.com/Arjun-P-Dinesh/MAI271---JAVA-Programming/tree/main/JavaProject"> **JavaProject** </a>
 * **javaLabTest1**
 
 **## Important Java Concepts**
