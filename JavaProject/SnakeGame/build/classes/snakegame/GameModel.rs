@@ -1,2 +1,0 @@
-snakegame.GameModel
-snakegame.Arrow

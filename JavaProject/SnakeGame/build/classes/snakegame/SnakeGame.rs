@@ -1,2 +1,0 @@
-snakegame.GameFrame
-snakegame.SnakeGame
